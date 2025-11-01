@@ -184,7 +184,7 @@ int main(){
     // demo: step a bit and show CUR only
     for(int i = 0; i < 32; i++){
         p.step();
-        p.print(true);
+        p.print(false);
     }
     return 0;
 }

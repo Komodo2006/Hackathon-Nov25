@@ -1,9 +1,0 @@
-NODE S(SWAP *) c1 *
-NODE c1(PUSH I f0) c2 *
-NODE c2(PUSH I m0) I *
-NODE f0(SWAP b0) c3 *
-NODE m0(PUSH b0 p0b0) n0 *
-NODE n0(PUSH b0 p1b0) c3 *
-END
-CUR = S
-INPUT = 00

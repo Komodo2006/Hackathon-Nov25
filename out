@@ -2,560 +2,94 @@ NODE S(SWAP *), p0 = c1, p1 = *
 NODE I(SWAP I), p0 = I, p1 = I 
 NODE O0(SWAP O0), p0 = O0, p1 = O0 
 NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
+NODE c1(PUSH I m0), p0 = c2, p1 = * 
 NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
+NODE c2(PUSH I f0), p0 = I, p1 = * 
 NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
+NODE f0(SWAP b0), p0 = c3, p1 = * 
+NODE c3(PUSH I m1), p0 = c4, p1 = * 
+NODE b0(SWAP *), p0 = p0b0, p1 = p1b0 
 NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
+NODE p0b0(SWAP *), p0 = b1, p1 = * 
+NODE p1b0(SWAP p0b1), p0 = p1b0', p1 = * 
+NODE c4(PUSH I f1), p0 = I, p1 = * 
+NODE m1(PUSH b1 p0b1), p0 = n1, p1 = * 
+NODE f1(SWAP b1), p0 = c5, p1 = * 
+NODE c5(SWAP *), p0 = b0, p1 = c5 
+NODE b1(SWAP *), p0 = p0b1, p1 = p1b1 
+NODE n1(PUSH b1 p1b1), p0 = c5, p1 = * 
+NODE p0b1(SWAP *), p0 = d0, p1 = d1 
+NODE p1b1(SWAP *), p0 = d1, p1 = d0 
+NODE d0(PUSH O0 E), p0 = d0', p1 = * 
+NODE d1(PUSH O1 E), p0 = d1', p1 = * 
+NODE p1b0'(SWAP p1b1), p0 = b1, p1 = * 
+NODE d0'(PUSH O0 E), p0 = O0, p1 = * 
+NODE E(SWAP E), p0 = E, p1 = E 
+NODE d1'(PUSH O1 E), p0 = O1, p1 = * 
 END
 CUR = S 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = I, p1 = I 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
 CUR = c1 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = I, p1 = f0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
 CUR = c2 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
 CUR = I 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = f0 
+CUR = m0 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
+CUR = n0 
+-------------------------
 CUR = c3 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = c4 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = I 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = m1 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = n1 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = c5 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = b0 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = p0b0 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = b1 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = p0b1 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = d0 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = d0' 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = O0 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = E 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = E 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = E 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = E 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = E 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = E 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = E 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = E 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = E 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = E 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = E 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = E 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = E 
 -------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
--------------------------
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = f0, p1 = m0 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I f0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I m0), p0 = I, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE c3(SWAP c3), p0 = c3, p1 = c3 
-NODE b0(SWAP b0), p0 = b0, p1 = b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP p0b0), p0 = p0b0, p1 = p0b0 
-NODE p1b0(SWAP p1b0), p0 = p1b0, p1 = p1b0 
-END
-CUR = c3 
+CUR = E 
 -------------------------
