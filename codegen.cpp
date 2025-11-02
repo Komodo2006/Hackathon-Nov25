@@ -158,7 +158,7 @@ namespace Logic{
         int s,t;
         NotGate ng[8];
         void init(Byte x,Byte y,string name){
-            for(int i=0;i<8;i++)ng[i].init(x.bd[i],y.bd[i],name+"_ng");
+            for(int i=0;i<8;i++)ng[i].init(x.bd[i],y.bd[i],name+"_ng"+to_string(i));
             s=newnode(NIL,0,0,name+"_s");
             t=newnode(NIL,0,0,name+"_t");
             connect0(s,ng[0].s);
@@ -183,6 +183,24 @@ namespace Logic{
             connect0(s,ha[0].s);
             for(int i=0;i<7;i++)connect0(ha[i].t,ha[i+1].s);
             connect0(ha[7].t,t);
+        }
+    };
+    struct ByteDecrement{
+        int s,t;
+        ByteNot bn1,bn2;
+        Byte a,b;
+        ByteIncrement bi;
+        void init(Byte x,Byte y,string name){
+            s = newnode(NIL,0,0,name+"_s");
+            t = newnode(NIL,0,0,name+"_t");
+            a.init0(name+"_a"); b.init0(name+"_b");
+            bn1.init(x,a,name+"_bn1");
+            bn2.init(b,y,name+"_bn2");
+            bi.init(a,b,name+"_bi");
+            connect0(s,bn1.s);
+            connect0(bn1.t,bi.s);
+            connect0(bi.t,bn2.s);
+            connect0(bn2.t,t);
         }
     };
 };
@@ -279,21 +297,23 @@ void TestByte(){
     connect0(wy.t,0);
     print();
 }
-int main(){
-    names[0]="*";
-    names[S]="S";names[I]="I";names[O0]="O0";names[O1]="O1";
-    Logic::init();
+void TestByteDecrement(){
     Byte x,y;
     x.init0("x");y.init0("y");
     IO::ByteReader rx;
     rx.init(x,"rx");
     connect0(S,rx.s);
-    Logic::ByteIncrement bi;
-    bi.init(x,y,"bi");
+    Logic::ByteDecrement bi;
+    bi.init(x,y,"bn");
     connect0(rx.t,bi.s);
     IO::ByteWriter wy;
     wy.init(y,"wy");
     connect0(bi.t,wy.s);
     connect0(wy.t,0);
     print();
+}
+int main(){
+    names[0]="*";
+    names[S]="S";names[I]="I";names[O0]="O0";names[O1]="O1";
+    Logic::init();
 }
