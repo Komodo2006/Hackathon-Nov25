@@ -1,95 +1,33 @@
-NODE S(SWAP *), p0 = c1, p1 = * 
-NODE I(SWAP I), p0 = I, p1 = I 
-NODE O0(SWAP O0), p0 = O0, p1 = O0 
-NODE O1(SWAP O1), p0 = O1, p1 = O1 
-NODE c1(PUSH I m0), p0 = c2, p1 = * 
-NODE *(SWAP *), p0 = *, p1 = * 
-NODE c2(PUSH I f0), p0 = I, p1 = * 
-NODE m0(PUSH b0 p0b0), p0 = n0, p1 = * 
-NODE f0(SWAP b0), p0 = c3, p1 = * 
-NODE c3(PUSH I m1), p0 = c4, p1 = * 
-NODE b0(SWAP *), p0 = p0b0, p1 = p1b0 
-NODE n0(PUSH b0 p1b0), p0 = c3, p1 = * 
-NODE p0b0(SWAP *), p0 = b1, p1 = * 
-NODE p1b0(SWAP p0b1), p0 = p1b0', p1 = * 
-NODE c4(PUSH I f1), p0 = I, p1 = * 
-NODE m1(PUSH b1 p0b1), p0 = n1, p1 = * 
-NODE f1(SWAP b1), p0 = c5, p1 = * 
-NODE c5(SWAP *), p0 = b0, p1 = c5 
-NODE b1(SWAP *), p0 = p0b1, p1 = p1b1 
-NODE n1(PUSH b1 p1b1), p0 = c5, p1 = * 
-NODE p0b1(SWAP *), p0 = d0, p1 = d1 
-NODE p1b1(SWAP *), p0 = d1, p1 = d0 
-NODE d0(PUSH O0 E), p0 = d0', p1 = * 
-NODE d1(PUSH O1 E), p0 = d1', p1 = * 
-NODE p1b0'(SWAP p1b1), p0 = b1, p1 = * 
-NODE d0'(PUSH O0 E), p0 = O0, p1 = * 
-NODE E(SWAP E), p0 = E, p1 = E 
-NODE d1'(PUSH O1 E), p0 = O1, p1 = * 
+NODE S(PUSH * *) 23 *
+NODE I(PUSH * *) * *
+NODE O0(PUSH * *) * *
+NODE O1(PUSH * *) * *
+NODE 5(SWAP *) 13 *
+NODE 6(SWAP *) 29 *
+NODE 7(SWAP *) 5 6
+NODE 8(PUSH 7 6) 25 *
+NODE 9(PUSH 7 5) 8 *
+NODE 10(SWAP 7) 25 *
+NODE 11(SWAP *) 21 22
+NODE 12(SWAP *) 22 21
+NODE 13(SWAP *) 11 12
+NODE 14(PUSH 13 12) 27 *
+NODE 15(PUSH 13 11) 14 *
+NODE 16(SWAP 13) 27 *
+NODE 17(SWAP *) O0 *
+NODE 18(SWAP *) O1 *
+NODE 19(SWAP *) 17 18
+NODE 20(PUSH 19 18) 30 *
+NODE 21(PUSH 19 17) 20 *
+NODE 22(SWAP 19) 30 *
+NODE 23(PUSH I 9) 24 *
+NODE 24(PUSH I 10) I *
+NODE 25(PUSH I 15) 26 *
+NODE 26(PUSH I 16) I *
+NODE 27(SWAP *) 7 *
+NODE 28(SWAP 11) 13 *
+NODE 29(SWAP 12) 28 *
+NODE 30(SWAP *) 19 *
 END
-CUR = S 
--------------------------
-CUR = c1 
--------------------------
-CUR = c2 
--------------------------
-CUR = I 
--------------------------
-CUR = m0 
--------------------------
-CUR = n0 
--------------------------
-CUR = c3 
--------------------------
-CUR = c4 
--------------------------
-CUR = I 
--------------------------
-CUR = m1 
--------------------------
-CUR = n1 
--------------------------
-CUR = c5 
--------------------------
-CUR = b0 
--------------------------
-CUR = p0b0 
--------------------------
-CUR = b1 
--------------------------
-CUR = p0b1 
--------------------------
-CUR = d0 
--------------------------
-CUR = d0' 
--------------------------
-CUR = O0 
--------------------------
-CUR = E 
--------------------------
-CUR = E 
--------------------------
-CUR = E 
--------------------------
-CUR = E 
--------------------------
-CUR = E 
--------------------------
-CUR = E 
--------------------------
-CUR = E 
--------------------------
-CUR = E 
--------------------------
-CUR = E 
--------------------------
-CUR = E 
--------------------------
-CUR = E 
--------------------------
-CUR = E 
--------------------------
-CUR = E 
--------------------------
-CUR = E 
--------------------------
+CUR = S
+INPUT = 10

@@ -1,0 +1,75 @@
+------- XOR.GLF
+NODE S(SWAP *) c1 *
+NODE c1(PUSH I m0) c2 *
+NODE c2(PUSH I f0) I *
+
+NODE f0(SWAP b0) c3 *
+NODE m0(PUSH b0 p0b0) n0 *
+NODE n0(PUSH b0 p1b0) c3 *
+NODE b0(SWAP *) p0b0 p1b0
+
+NODE c3(PUSH I m1) c4 *
+NODE c4(PUSH I f1) I *
+
+NODE f1(SWAP b1) c5 *
+NODE m1(PUSH b1 p0b1) n1 *
+NODE n1(PUSH b1 p1b1) c5 *
+NODE b1(SWAP *) p0b1 p1b1
+
+NODE p0b1(SWAP *) d0 d1
+NODE p1b1(SWAP *) d1 d0
+
+NODE p0b0(SWAP *) b1 *
+NODE p1b0(SWAP p0b1) p1b0' *
+NODE p1b0'(SWAP p1b1) b1 *
+
+NODE c5(SWAP *) b0
+
+NODE d0(PUSH O0 E) d0' *
+NODE d0'(PUSH O0 E) O0 *
+NODE d1(PUSH O1 E) d1' *
+NODE d1'(PUSH O1 E) O1 *
+
+NODE E (SWAP E) E E
+
+END
+CUR = S
+INPUT = 11
+
+
+-----------AND.GLF
+NODE S(SWAP *) c1 *
+NODE c1(PUSH I m0) c2 *
+NODE c2(PUSH I f0) I *
+
+NODE f0(SWAP b0) c3 *
+NODE m0(PUSH b0 p0b0) n0 *
+NODE n0(PUSH b0 p1b0) c3 *
+NODE b0(SWAP *) p0b0 p1b0
+
+NODE c3(PUSH I m1) c4 *
+NODE c4(PUSH I f1) I *
+
+NODE f1(SWAP b1) c5 *
+NODE m1(PUSH b1 p0b1) n1 *
+NODE n1(PUSH b1 p1b1) c5 *
+NODE b1(SWAP *) p0b1 p1b1
+
+NODE p0b1(SWAP *) d0 *
+NODE p1b1(SWAP *) d1 *
+
+NODE p0b0(SWAP *) d0 *
+NODE p1b0(SWAP *) b1 *
+
+NODE c5(SWAP *) b0
+
+NODE d0(PUSH O0 E) d0' *
+NODE d0'(PUSH O0 E) O0 *
+NODE d1(PUSH O1 E) d1' *
+NODE d1'(PUSH O1 E) O1 *
+
+NODE E (SWAP E) E E
+
+END
+CUR = S
+INPUT = 11
