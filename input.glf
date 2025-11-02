@@ -1,219 +1,545 @@
-NODE S(PUSH * *) 113 *
+NODE S(PUSH * *) rx_s *
 NODE I(PUSH * *) * *
 NODE O0(PUSH * *) * *
 NODE O1(PUSH * *) * *
-NODE 5(SWAP *) * *
-NODE 6(SWAP *) * *
-NODE 7(SWAP *) 5 6
-NODE 8(PUSH 7 6) * *
-NODE 9(PUSH 7 5) 8 *
-NODE 10(SWAP 7) * *
-NODE 11(SWAP *) * *
-NODE 12(SWAP *) * *
-NODE 13(SWAP *) 12 11
-NODE 14(PUSH 13 12) * *
-NODE 15(PUSH 13 11) 14 *
-NODE 16(SWAP 13) * *
-NODE 17(SWAP *) 70 *
-NODE 18(SWAP *) 69 *
-NODE 19(SWAP *) 17 18
-NODE 20(PUSH 19 18) 118 *
-NODE 21(PUSH 19 17) 20 *
-NODE 22(SWAP 19) 118 *
-NODE 23(SWAP *) 76 *
-NODE 24(SWAP *) 75 *
-NODE 25(SWAP *) 23 24
-NODE 26(PUSH 25 24) 122 *
-NODE 27(PUSH 25 23) 26 *
-NODE 28(SWAP 25) 122 *
-NODE 29(SWAP *) 82 *
-NODE 30(SWAP *) 81 *
-NODE 31(SWAP *) 29 30
-NODE 32(PUSH 31 30) 126 *
-NODE 33(PUSH 31 29) 32 *
-NODE 34(SWAP 31) 126 *
-NODE 35(SWAP *) 88 *
-NODE 36(SWAP *) 87 *
-NODE 37(SWAP *) 35 36
-NODE 38(PUSH 37 36) 130 *
-NODE 39(PUSH 37 35) 38 *
-NODE 40(SWAP 37) 130 *
-NODE 41(SWAP *) 94 *
-NODE 42(SWAP *) 93 *
-NODE 43(SWAP *) 41 42
-NODE 44(PUSH 43 42) 134 *
-NODE 45(PUSH 43 41) 44 *
-NODE 46(SWAP 43) 134 *
-NODE 47(SWAP *) 100 *
-NODE 48(SWAP *) 99 *
-NODE 49(SWAP *) 47 48
-NODE 50(PUSH 49 48) 138 *
-NODE 51(PUSH 49 47) 50 *
-NODE 52(SWAP 49) 138 *
-NODE 53(SWAP *) 106 *
-NODE 54(SWAP *) 105 *
-NODE 55(SWAP *) 53 54
-NODE 56(PUSH 55 54) 142 *
-NODE 57(PUSH 55 53) 56 *
-NODE 58(SWAP 55) 142 *
-NODE 59(SWAP *) 112 *
-NODE 60(SWAP *) 111 *
-NODE 61(SWAP *) 59 60
-NODE 62(PUSH 61 60) 146 *
-NODE 63(PUSH 61 59) 62 *
-NODE 64(SWAP 61) 146 *
-NODE 65(SWAP *) 170 *
-NODE 66(SWAP *) 172 *
-NODE 67(SWAP *) 65 66
-NODE 68(PUSH 67 66) 148 *
-NODE 69(PUSH 67 65) 68 *
-NODE 70(SWAP 67) 148 *
-NODE 71(SWAP *) 176 *
-NODE 72(SWAP *) 178 *
-NODE 73(SWAP *) 71 72
-NODE 74(PUSH 73 72) 150 *
-NODE 75(PUSH 73 71) 74 *
-NODE 76(SWAP 73) 150 *
-NODE 77(SWAP *) 182 *
-NODE 78(SWAP *) 184 *
-NODE 79(SWAP *) 77 78
-NODE 80(PUSH 79 78) 152 *
-NODE 81(PUSH 79 77) 80 *
-NODE 82(SWAP 79) 152 *
-NODE 83(SWAP *) 188 *
-NODE 84(SWAP *) 190 *
-NODE 85(SWAP *) 83 84
-NODE 86(PUSH 85 84) 154 *
-NODE 87(PUSH 85 83) 86 *
-NODE 88(SWAP 85) 154 *
-NODE 89(SWAP *) 194 *
-NODE 90(SWAP *) 196 *
-NODE 91(SWAP *) 89 90
-NODE 92(PUSH 91 90) 156 *
-NODE 93(PUSH 91 89) 92 *
-NODE 94(SWAP 91) 156 *
-NODE 95(SWAP *) 200 *
-NODE 96(SWAP *) 202 *
-NODE 97(SWAP *) 95 96
-NODE 98(PUSH 97 96) 158 *
-NODE 99(PUSH 97 95) 98 *
-NODE 100(SWAP 97) 158 *
-NODE 101(SWAP *) 206 *
-NODE 102(SWAP *) 208 *
-NODE 103(SWAP *) 101 102
-NODE 104(PUSH 103 102) 160 *
-NODE 105(PUSH 103 101) 104 *
-NODE 106(SWAP 103) 160 *
-NODE 107(SWAP *) 212 *
-NODE 108(SWAP *) 214 *
-NODE 109(SWAP *) 107 108
-NODE 110(PUSH 109 108) 162 *
-NODE 111(PUSH 109 107) 110 *
-NODE 112(SWAP 109) 162 *
-NODE 113(SWAP *) 117 *
-NODE 114(SWAP *) 163 *
-NODE 115(PUSH I 21) 116 *
-NODE 116(PUSH I 22) I *
-NODE 117(SWAP *) 115 *
-NODE 118(SWAP *) 121 *
-NODE 119(PUSH I 27) 120 *
-NODE 120(PUSH I 28) I *
-NODE 121(SWAP *) 119 *
-NODE 122(SWAP *) 125 *
-NODE 123(PUSH I 33) 124 *
-NODE 124(PUSH I 34) I *
-NODE 125(SWAP *) 123 *
-NODE 126(SWAP *) 129 *
-NODE 127(PUSH I 39) 128 *
-NODE 128(PUSH I 40) I *
-NODE 129(SWAP *) 127 *
-NODE 130(SWAP *) 133 *
-NODE 131(PUSH I 45) 132 *
-NODE 132(PUSH I 46) I *
-NODE 133(SWAP *) 131 *
-NODE 134(SWAP *) 137 *
-NODE 135(PUSH I 51) 136 *
-NODE 136(PUSH I 52) I *
-NODE 137(SWAP *) 135 *
-NODE 138(SWAP *) 141 *
-NODE 139(PUSH I 57) 140 *
-NODE 140(PUSH I 58) I *
-NODE 141(SWAP *) 139 *
-NODE 142(SWAP *) 145 *
-NODE 143(PUSH I 63) 144 *
-NODE 144(PUSH I 64) I *
-NODE 145(SWAP *) 143 *
-NODE 146(SWAP *) 114 *
-NODE 147(SWAP *) 19 *
-NODE 148(SWAP *) 149 *
-NODE 149(SWAP *) 25 *
-NODE 150(SWAP *) 151 *
-NODE 151(SWAP *) 31 *
-NODE 152(SWAP *) 153 *
-NODE 153(SWAP *) 37 *
-NODE 154(SWAP *) 155 *
-NODE 155(SWAP *) 43 *
-NODE 156(SWAP *) 157 *
-NODE 157(SWAP *) 49 *
-NODE 158(SWAP *) 159 *
-NODE 159(SWAP *) 55 *
-NODE 160(SWAP *) 161 *
-NODE 161(SWAP *) 61 *
-NODE 162(SWAP *) 164 *
-NODE 163(SWAP *) 147 *
-NODE 164(SWAP *) 165 *
-NODE 165(SWAP *) 167 *
-NODE 166(SWAP *) * *
-NODE 167(SWAP *) 67 *
-NODE 168(SWAP *) 173 *
-NODE 169(PUSH O0 *) O0 *
-NODE 170(PUSH O0 168) 169 *
-NODE 171(PUSH O1 *) O1 *
-NODE 172(PUSH O1 168) 171 *
-NODE 173(SWAP *) 73 *
-NODE 174(SWAP *) 179 *
-NODE 175(PUSH O0 *) O0 *
-NODE 176(PUSH O0 174) 175 *
-NODE 177(PUSH O1 *) O1 *
-NODE 178(PUSH O1 174) 177 *
-NODE 179(SWAP *) 79 *
-NODE 180(SWAP *) 185 *
-NODE 181(PUSH O0 *) O0 *
-NODE 182(PUSH O0 180) 181 *
-NODE 183(PUSH O1 *) O1 *
-NODE 184(PUSH O1 180) 183 *
-NODE 185(SWAP *) 85 *
-NODE 186(SWAP *) 191 *
-NODE 187(PUSH O0 *) O0 *
-NODE 188(PUSH O0 186) 187 *
-NODE 189(PUSH O1 *) O1 *
-NODE 190(PUSH O1 186) 189 *
-NODE 191(SWAP *) 91 *
-NODE 192(SWAP *) 197 *
-NODE 193(PUSH O0 *) O0 *
-NODE 194(PUSH O0 192) 193 *
-NODE 195(PUSH O1 *) O1 *
-NODE 196(PUSH O1 192) 195 *
-NODE 197(SWAP *) 97 *
-NODE 198(SWAP *) 203 *
-NODE 199(PUSH O0 *) O0 *
-NODE 200(PUSH O0 198) 199 *
-NODE 201(PUSH O1 *) O1 *
-NODE 202(PUSH O1 198) 201 *
-NODE 203(SWAP *) 103 *
-NODE 204(SWAP *) 209 *
-NODE 205(PUSH O0 *) O0 *
-NODE 206(PUSH O0 204) 205 *
-NODE 207(PUSH O1 *) O1 *
-NODE 208(PUSH O1 204) 207 *
-NODE 209(SWAP *) 109 *
-NODE 210(SWAP *) 166 *
-NODE 211(PUSH O0 *) O0 *
-NODE 212(PUSH O0 210) 211 *
-NODE 213(PUSH O1 *) O1 *
-NODE 214(PUSH O1 210) 213 *
+NODE B0_bp0(SWAP *) * *
+NODE B0_bp1(SWAP *) * *
+NODE B0_b(SWAP *) B0_bp0 B0_bp1
+NODE B0_r1(PUSH B0_b B0_bp1) * *
+NODE B0_r0(PUSH B0_b B0_bp0) B0_r1 *
+NODE B0_f(SWAP B0_b) * *
+NODE B1_bp0(SWAP *) * *
+NODE B1_bp1(SWAP *) * *
+NODE B1_b(SWAP *) B1_bp1 B1_bp0
+NODE B1_r1(PUSH B1_b B1_bp1) * *
+NODE B1_r0(PUSH B1_b B1_bp0) B1_r1 *
+NODE B1_f(SWAP B1_b) * *
+NODE x_bd0_bp0(SWAP *) bi_ha0_i0d1_r0 *
+NODE x_bd0_bp1(SWAP *) bi_ha0_i0d1_f *
+NODE x_bd0_b(SWAP *) x_bd0_bp0 x_bd0_bp1
+NODE x_bd0_r1(PUSH x_bd0_b x_bd0_bp1) rx_rd0_t *
+NODE x_bd0_r0(PUSH x_bd0_b x_bd0_bp0) x_bd0_r1 *
+NODE x_bd0_f(SWAP x_bd0_b) rx_rd0_t *
+NODE x_bd1_bp0(SWAP *) bi_ha1_i0d1_r0 *
+NODE x_bd1_bp1(SWAP *) bi_ha1_i0d1_f *
+NODE x_bd1_b(SWAP *) x_bd1_bp0 x_bd1_bp1
+NODE x_bd1_r1(PUSH x_bd1_b x_bd1_bp1) rx_rd1_t *
+NODE x_bd1_r0(PUSH x_bd1_b x_bd1_bp0) x_bd1_r1 *
+NODE x_bd1_f(SWAP x_bd1_b) rx_rd1_t *
+NODE x_bd2_bp0(SWAP *) bi_ha2_i0d1_r0 *
+NODE x_bd2_bp1(SWAP *) bi_ha2_i0d1_f *
+NODE x_bd2_b(SWAP *) x_bd2_bp0 x_bd2_bp1
+NODE x_bd2_r1(PUSH x_bd2_b x_bd2_bp1) rx_rd2_t *
+NODE x_bd2_r0(PUSH x_bd2_b x_bd2_bp0) x_bd2_r1 *
+NODE x_bd2_f(SWAP x_bd2_b) rx_rd2_t *
+NODE x_bd3_bp0(SWAP *) bi_ha3_i0d1_r0 *
+NODE x_bd3_bp1(SWAP *) bi_ha3_i0d1_f *
+NODE x_bd3_b(SWAP *) x_bd3_bp0 x_bd3_bp1
+NODE x_bd3_r1(PUSH x_bd3_b x_bd3_bp1) rx_rd3_t *
+NODE x_bd3_r0(PUSH x_bd3_b x_bd3_bp0) x_bd3_r1 *
+NODE x_bd3_f(SWAP x_bd3_b) rx_rd3_t *
+NODE x_bd4_bp0(SWAP *) bi_ha4_i0d1_r0 *
+NODE x_bd4_bp1(SWAP *) bi_ha4_i0d1_f *
+NODE x_bd4_b(SWAP *) x_bd4_bp0 x_bd4_bp1
+NODE x_bd4_r1(PUSH x_bd4_b x_bd4_bp1) rx_rd4_t *
+NODE x_bd4_r0(PUSH x_bd4_b x_bd4_bp0) x_bd4_r1 *
+NODE x_bd4_f(SWAP x_bd4_b) rx_rd4_t *
+NODE x_bd5_bp0(SWAP *) bi_ha5_i0d1_r0 *
+NODE x_bd5_bp1(SWAP *) bi_ha5_i0d1_f *
+NODE x_bd5_b(SWAP *) x_bd5_bp0 x_bd5_bp1
+NODE x_bd5_r1(PUSH x_bd5_b x_bd5_bp1) rx_rd5_t *
+NODE x_bd5_r0(PUSH x_bd5_b x_bd5_bp0) x_bd5_r1 *
+NODE x_bd5_f(SWAP x_bd5_b) rx_rd5_t *
+NODE x_bd6_bp0(SWAP *) bi_ha6_i0d1_r0 *
+NODE x_bd6_bp1(SWAP *) bi_ha6_i0d1_f *
+NODE x_bd6_b(SWAP *) x_bd6_bp0 x_bd6_bp1
+NODE x_bd6_r1(PUSH x_bd6_b x_bd6_bp1) rx_rd6_t *
+NODE x_bd6_r0(PUSH x_bd6_b x_bd6_bp0) x_bd6_r1 *
+NODE x_bd6_f(SWAP x_bd6_b) rx_rd6_t *
+NODE x_bd7_bp0(SWAP *) bi_ha7_i0d1_r0 *
+NODE x_bd7_bp1(SWAP *) bi_ha7_i0d1_f *
+NODE x_bd7_b(SWAP *) x_bd7_bp0 x_bd7_bp1
+NODE x_bd7_r1(PUSH x_bd7_b x_bd7_bp1) rx_rd7_t *
+NODE x_bd7_r0(PUSH x_bd7_b x_bd7_bp0) x_bd7_r1 *
+NODE x_bd7_f(SWAP x_bd7_b) rx_rd7_t *
+NODE y_bd0_bp0(SWAP *) wy_wd0_c2 *
+NODE y_bd0_bp1(SWAP *) wy_wd0_c4 *
+NODE y_bd0_b(SWAP *) y_bd0_bp0 y_bd0_bp1
+NODE y_bd0_r1(PUSH y_bd0_b y_bd0_bp1) bi_ha0_XOR_t *
+NODE y_bd0_r0(PUSH y_bd0_b y_bd0_bp0) y_bd0_r1 *
+NODE y_bd0_f(SWAP y_bd0_b) bi_ha0_XOR_t *
+NODE y_bd1_bp0(SWAP *) wy_wd1_c2 *
+NODE y_bd1_bp1(SWAP *) wy_wd1_c4 *
+NODE y_bd1_b(SWAP *) y_bd1_bp0 y_bd1_bp1
+NODE y_bd1_r1(PUSH y_bd1_b y_bd1_bp1) bi_ha1_XOR_t *
+NODE y_bd1_r0(PUSH y_bd1_b y_bd1_bp0) y_bd1_r1 *
+NODE y_bd1_f(SWAP y_bd1_b) bi_ha1_XOR_t *
+NODE y_bd2_bp0(SWAP *) wy_wd2_c2 *
+NODE y_bd2_bp1(SWAP *) wy_wd2_c4 *
+NODE y_bd2_b(SWAP *) y_bd2_bp0 y_bd2_bp1
+NODE y_bd2_r1(PUSH y_bd2_b y_bd2_bp1) bi_ha2_XOR_t *
+NODE y_bd2_r0(PUSH y_bd2_b y_bd2_bp0) y_bd2_r1 *
+NODE y_bd2_f(SWAP y_bd2_b) bi_ha2_XOR_t *
+NODE y_bd3_bp0(SWAP *) wy_wd3_c2 *
+NODE y_bd3_bp1(SWAP *) wy_wd3_c4 *
+NODE y_bd3_b(SWAP *) y_bd3_bp0 y_bd3_bp1
+NODE y_bd3_r1(PUSH y_bd3_b y_bd3_bp1) bi_ha3_XOR_t *
+NODE y_bd3_r0(PUSH y_bd3_b y_bd3_bp0) y_bd3_r1 *
+NODE y_bd3_f(SWAP y_bd3_b) bi_ha3_XOR_t *
+NODE y_bd4_bp0(SWAP *) wy_wd4_c2 *
+NODE y_bd4_bp1(SWAP *) wy_wd4_c4 *
+NODE y_bd4_b(SWAP *) y_bd4_bp0 y_bd4_bp1
+NODE y_bd4_r1(PUSH y_bd4_b y_bd4_bp1) bi_ha4_XOR_t *
+NODE y_bd4_r0(PUSH y_bd4_b y_bd4_bp0) y_bd4_r1 *
+NODE y_bd4_f(SWAP y_bd4_b) bi_ha4_XOR_t *
+NODE y_bd5_bp0(SWAP *) wy_wd5_c2 *
+NODE y_bd5_bp1(SWAP *) wy_wd5_c4 *
+NODE y_bd5_b(SWAP *) y_bd5_bp0 y_bd5_bp1
+NODE y_bd5_r1(PUSH y_bd5_b y_bd5_bp1) bi_ha5_XOR_t *
+NODE y_bd5_r0(PUSH y_bd5_b y_bd5_bp0) y_bd5_r1 *
+NODE y_bd5_f(SWAP y_bd5_b) bi_ha5_XOR_t *
+NODE y_bd6_bp0(SWAP *) wy_wd6_c2 *
+NODE y_bd6_bp1(SWAP *) wy_wd6_c4 *
+NODE y_bd6_b(SWAP *) y_bd6_bp0 y_bd6_bp1
+NODE y_bd6_r1(PUSH y_bd6_b y_bd6_bp1) bi_ha6_XOR_t *
+NODE y_bd6_r0(PUSH y_bd6_b y_bd6_bp0) y_bd6_r1 *
+NODE y_bd6_f(SWAP y_bd6_b) bi_ha6_XOR_t *
+NODE y_bd7_bp0(SWAP *) wy_wd7_c2 *
+NODE y_bd7_bp1(SWAP *) wy_wd7_c4 *
+NODE y_bd7_b(SWAP *) y_bd7_bp0 y_bd7_bp1
+NODE y_bd7_r1(PUSH y_bd7_b y_bd7_bp1) bi_ha7_XOR_t *
+NODE y_bd7_r0(PUSH y_bd7_b y_bd7_bp0) y_bd7_r1 *
+NODE y_bd7_f(SWAP y_bd7_b) bi_ha7_XOR_t *
+NODE rx_s(SWAP *) rx_rd0_s *
+NODE rx_t(SWAP *) bi_s *
+NODE rx_rd0_c1(PUSH I x_bd0_r0) rx_rd0_c2 *
+NODE rx_rd0_c2(PUSH I x_bd0_f) I *
+NODE rx_rd0_s(SWAP *) rx_rd0_c1 *
+NODE rx_rd0_t(SWAP *) rx_rd1_s *
+NODE rx_rd1_c1(PUSH I x_bd1_r0) rx_rd1_c2 *
+NODE rx_rd1_c2(PUSH I x_bd1_f) I *
+NODE rx_rd1_s(SWAP *) rx_rd1_c1 *
+NODE rx_rd1_t(SWAP *) rx_rd2_s *
+NODE rx_rd2_c1(PUSH I x_bd2_r0) rx_rd2_c2 *
+NODE rx_rd2_c2(PUSH I x_bd2_f) I *
+NODE rx_rd2_s(SWAP *) rx_rd2_c1 *
+NODE rx_rd2_t(SWAP *) rx_rd3_s *
+NODE rx_rd3_c1(PUSH I x_bd3_r0) rx_rd3_c2 *
+NODE rx_rd3_c2(PUSH I x_bd3_f) I *
+NODE rx_rd3_s(SWAP *) rx_rd3_c1 *
+NODE rx_rd3_t(SWAP *) rx_rd4_s *
+NODE rx_rd4_c1(PUSH I x_bd4_r0) rx_rd4_c2 *
+NODE rx_rd4_c2(PUSH I x_bd4_f) I *
+NODE rx_rd4_s(SWAP *) rx_rd4_c1 *
+NODE rx_rd4_t(SWAP *) rx_rd5_s *
+NODE rx_rd5_c1(PUSH I x_bd5_r0) rx_rd5_c2 *
+NODE rx_rd5_c2(PUSH I x_bd5_f) I *
+NODE rx_rd5_s(SWAP *) rx_rd5_c1 *
+NODE rx_rd5_t(SWAP *) rx_rd6_s *
+NODE rx_rd6_c1(PUSH I x_bd6_r0) rx_rd6_c2 *
+NODE rx_rd6_c2(PUSH I x_bd6_f) I *
+NODE rx_rd6_s(SWAP *) rx_rd6_c1 *
+NODE rx_rd6_t(SWAP *) rx_rd7_s *
+NODE rx_rd7_c1(PUSH I x_bd7_r0) rx_rd7_c2 *
+NODE rx_rd7_c2(PUSH I x_bd7_f) I *
+NODE rx_rd7_s(SWAP *) rx_rd7_c1 *
+NODE rx_rd7_t(SWAP *) rx_t *
+NODE bi_s(SWAP *) bi_ha0_s *
+NODE bi_t(SWAP *) wy_s *
+NODE bi_cr0_bp0(SWAP *) bi_ha0_i1d1_r0 *
+NODE bi_cr0_bp1(SWAP *) bi_ha0_i1d1_f *
+NODE bi_cr0_b(SWAP *) bi_cr0_bp1 bi_cr0_bp0
+NODE bi_cr0_r1(PUSH bi_cr0_b bi_cr0_bp1) * *
+NODE bi_cr0_r0(PUSH bi_cr0_b bi_cr0_bp0) bi_cr0_r1 *
+NODE bi_cr0_f(SWAP bi_cr0_b) * *
+NODE bi_cr1_bp0(SWAP *) bi_ha1_i1d1_r0 *
+NODE bi_cr1_bp1(SWAP *) bi_ha1_i1d1_f *
+NODE bi_cr1_b(SWAP *) bi_cr1_bp0 bi_cr1_bp1
+NODE bi_cr1_r1(PUSH bi_cr1_b bi_cr1_bp1) bi_ha0_AND_t *
+NODE bi_cr1_r0(PUSH bi_cr1_b bi_cr1_bp0) bi_cr1_r1 *
+NODE bi_cr1_f(SWAP bi_cr1_b) bi_ha0_AND_t *
+NODE bi_cr2_bp0(SWAP *) bi_ha2_i1d1_r0 *
+NODE bi_cr2_bp1(SWAP *) bi_ha2_i1d1_f *
+NODE bi_cr2_b(SWAP *) bi_cr2_bp0 bi_cr2_bp1
+NODE bi_cr2_r1(PUSH bi_cr2_b bi_cr2_bp1) bi_ha1_AND_t *
+NODE bi_cr2_r0(PUSH bi_cr2_b bi_cr2_bp0) bi_cr2_r1 *
+NODE bi_cr2_f(SWAP bi_cr2_b) bi_ha1_AND_t *
+NODE bi_cr3_bp0(SWAP *) bi_ha3_i1d1_r0 *
+NODE bi_cr3_bp1(SWAP *) bi_ha3_i1d1_f *
+NODE bi_cr3_b(SWAP *) bi_cr3_bp0 bi_cr3_bp1
+NODE bi_cr3_r1(PUSH bi_cr3_b bi_cr3_bp1) bi_ha2_AND_t *
+NODE bi_cr3_r0(PUSH bi_cr3_b bi_cr3_bp0) bi_cr3_r1 *
+NODE bi_cr3_f(SWAP bi_cr3_b) bi_ha2_AND_t *
+NODE bi_cr4_bp0(SWAP *) bi_ha4_i1d1_r0 *
+NODE bi_cr4_bp1(SWAP *) bi_ha4_i1d1_f *
+NODE bi_cr4_b(SWAP *) bi_cr4_bp0 bi_cr4_bp1
+NODE bi_cr4_r1(PUSH bi_cr4_b bi_cr4_bp1) bi_ha3_AND_t *
+NODE bi_cr4_r0(PUSH bi_cr4_b bi_cr4_bp0) bi_cr4_r1 *
+NODE bi_cr4_f(SWAP bi_cr4_b) bi_ha3_AND_t *
+NODE bi_cr5_bp0(SWAP *) bi_ha5_i1d1_r0 *
+NODE bi_cr5_bp1(SWAP *) bi_ha5_i1d1_f *
+NODE bi_cr5_b(SWAP *) bi_cr5_bp0 bi_cr5_bp1
+NODE bi_cr5_r1(PUSH bi_cr5_b bi_cr5_bp1) bi_ha4_AND_t *
+NODE bi_cr5_r0(PUSH bi_cr5_b bi_cr5_bp0) bi_cr5_r1 *
+NODE bi_cr5_f(SWAP bi_cr5_b) bi_ha4_AND_t *
+NODE bi_cr6_bp0(SWAP *) bi_ha6_i1d1_r0 *
+NODE bi_cr6_bp1(SWAP *) bi_ha6_i1d1_f *
+NODE bi_cr6_b(SWAP *) bi_cr6_bp0 bi_cr6_bp1
+NODE bi_cr6_r1(PUSH bi_cr6_b bi_cr6_bp1) bi_ha5_AND_t *
+NODE bi_cr6_r0(PUSH bi_cr6_b bi_cr6_bp0) bi_cr6_r1 *
+NODE bi_cr6_f(SWAP bi_cr6_b) bi_ha5_AND_t *
+NODE bi_cr7_bp0(SWAP *) bi_ha7_i1d1_r0 *
+NODE bi_cr7_bp1(SWAP *) bi_ha7_i1d1_f *
+NODE bi_cr7_b(SWAP *) bi_cr7_bp0 bi_cr7_bp1
+NODE bi_cr7_r1(PUSH bi_cr7_b bi_cr7_bp1) bi_ha6_AND_t *
+NODE bi_cr7_r0(PUSH bi_cr7_b bi_cr7_bp0) bi_cr7_r1 *
+NODE bi_cr7_f(SWAP bi_cr7_b) bi_ha6_AND_t *
+NODE bi_cr8_bp0(SWAP *) * *
+NODE bi_cr8_bp1(SWAP *) * *
+NODE bi_cr8_b(SWAP *) bi_cr8_bp0 bi_cr8_bp1
+NODE bi_cr8_r1(PUSH bi_cr8_b bi_cr8_bp1) bi_ha7_AND_t *
+NODE bi_cr8_r0(PUSH bi_cr8_b bi_cr8_bp0) bi_cr8_r1 *
+NODE bi_cr8_f(SWAP bi_cr8_b) bi_ha7_AND_t *
+NODE bi_ha0_i0d1_bp0(SWAP *) bi_ha0_i1d1_b *
+NODE bi_ha0_i0d1_bp1(SWAP *) bi_ha0_XOR__r1 *
+NODE bi_ha0_i0d1_b(SWAP *) bi_ha0_i0d1_bp0 bi_ha0_i0d1_bp1
+NODE bi_ha0_i0d1_r1(PUSH bi_ha0_i0d1_b bi_ha0_i0d1_bp1) bi_ha0_i0d2_r0 *
+NODE bi_ha0_i0d1_r0(PUSH bi_ha0_i0d1_b bi_ha0_i0d1_bp0) bi_ha0_i0d1_r1 *
+NODE bi_ha0_i0d1_f(SWAP bi_ha0_i0d1_b) bi_ha0_i0d2_f *
+NODE bi_ha0_i1d1_bp0(SWAP *) y_bd0_r0 y_bd0_f
+NODE bi_ha0_i1d1_bp1(SWAP *) y_bd0_f y_bd0_r0
+NODE bi_ha0_i1d1_b(SWAP *) bi_ha0_i1d1_bp0 bi_ha0_i1d1_bp1
+NODE bi_ha0_i1d1_r1(PUSH bi_ha0_i1d1_b bi_ha0_i1d1_bp1) bi_ha0_i1d2_r0 *
+NODE bi_ha0_i1d1_r0(PUSH bi_ha0_i1d1_b bi_ha0_i1d1_bp0) bi_ha0_i1d1_r1 *
+NODE bi_ha0_i1d1_f(SWAP bi_ha0_i1d1_b) bi_ha0_i1d2_f *
+NODE bi_ha0_i0d2_bp0(SWAP *) bi_cr1_r0 *
+NODE bi_ha0_i0d2_bp1(SWAP *) bi_ha0_i1d2_b *
+NODE bi_ha0_i0d2_b(SWAP *) bi_ha0_i0d2_bp0 bi_ha0_i0d2_bp1
+NODE bi_ha0_i0d2_r1(PUSH bi_ha0_i0d2_b bi_ha0_i0d2_bp1) bi_ha0_d0_t *
+NODE bi_ha0_i0d2_r0(PUSH bi_ha0_i0d2_b bi_ha0_i0d2_bp0) bi_ha0_i0d2_r1 *
+NODE bi_ha0_i0d2_f(SWAP bi_ha0_i0d2_b) bi_ha0_d0_t *
+NODE bi_ha0_i1d2_bp0(SWAP *) bi_cr1_r0 *
+NODE bi_ha0_i1d2_bp1(SWAP *) bi_cr1_f *
+NODE bi_ha0_i1d2_b(SWAP *) bi_ha0_i1d2_bp0 bi_ha0_i1d2_bp1
+NODE bi_ha0_i1d2_r1(PUSH bi_ha0_i1d2_b bi_ha0_i1d2_bp1) bi_ha0_d1_t *
+NODE bi_ha0_i1d2_r0(PUSH bi_ha0_i1d2_b bi_ha0_i1d2_bp0) bi_ha0_i1d2_r1 *
+NODE bi_ha0_i1d2_f(SWAP bi_ha0_i1d2_b) bi_ha0_d1_t *
+NODE bi_ha0_d0_s(SWAP *) x_bd0_b *
+NODE bi_ha0_d0_t(SWAP *) bi_ha0_d1_s *
+NODE bi_ha0_d1_s(SWAP *) bi_cr0_b *
+NODE bi_ha0_d1_t(SWAP *) bi_ha0_XOR_s *
+NODE bi_ha0_s(SWAP *) bi_ha0_d0_s *
+NODE bi_ha0_XOR_s(SWAP *) bi_ha0_i0d1_b *
+NODE bi_ha0_XOR__r2(SWAP bi_ha0_i1d1_bp0) bi_ha0_i1d1_b *
+NODE bi_ha0_XOR__r1(SWAP bi_ha0_i1d1_bp1) bi_ha0_XOR__r2 *
+NODE bi_ha0_XOR_t(SWAP *) bi_ha0_AND_s *
+NODE bi_ha0_AND_s(SWAP *) bi_ha0_i0d2_b *
+NODE bi_ha0_AND_t(SWAP *) bi_ha0_t *
+NODE bi_ha0_t(SWAP *) bi_ha1_s *
+NODE bi_ha1_i0d1_bp0(SWAP *) bi_ha1_i1d1_b *
+NODE bi_ha1_i0d1_bp1(SWAP *) bi_ha1_XOR__r1 *
+NODE bi_ha1_i0d1_b(SWAP *) bi_ha1_i0d1_bp0 bi_ha1_i0d1_bp1
+NODE bi_ha1_i0d1_r1(PUSH bi_ha1_i0d1_b bi_ha1_i0d1_bp1) bi_ha1_i0d2_r0 *
+NODE bi_ha1_i0d1_r0(PUSH bi_ha1_i0d1_b bi_ha1_i0d1_bp0) bi_ha1_i0d1_r1 *
+NODE bi_ha1_i0d1_f(SWAP bi_ha1_i0d1_b) bi_ha1_i0d2_f *
+NODE bi_ha1_i1d1_bp0(SWAP *) y_bd1_r0 y_bd1_f
+NODE bi_ha1_i1d1_bp1(SWAP *) y_bd1_f y_bd1_r0
+NODE bi_ha1_i1d1_b(SWAP *) bi_ha1_i1d1_bp0 bi_ha1_i1d1_bp1
+NODE bi_ha1_i1d1_r1(PUSH bi_ha1_i1d1_b bi_ha1_i1d1_bp1) bi_ha1_i1d2_r0 *
+NODE bi_ha1_i1d1_r0(PUSH bi_ha1_i1d1_b bi_ha1_i1d1_bp0) bi_ha1_i1d1_r1 *
+NODE bi_ha1_i1d1_f(SWAP bi_ha1_i1d1_b) bi_ha1_i1d2_f *
+NODE bi_ha1_i0d2_bp0(SWAP *) bi_cr2_r0 *
+NODE bi_ha1_i0d2_bp1(SWAP *) bi_ha1_i1d2_b *
+NODE bi_ha1_i0d2_b(SWAP *) bi_ha1_i0d2_bp0 bi_ha1_i0d2_bp1
+NODE bi_ha1_i0d2_r1(PUSH bi_ha1_i0d2_b bi_ha1_i0d2_bp1) bi_ha1_d0_t *
+NODE bi_ha1_i0d2_r0(PUSH bi_ha1_i0d2_b bi_ha1_i0d2_bp0) bi_ha1_i0d2_r1 *
+NODE bi_ha1_i0d2_f(SWAP bi_ha1_i0d2_b) bi_ha1_d0_t *
+NODE bi_ha1_i1d2_bp0(SWAP *) bi_cr2_r0 *
+NODE bi_ha1_i1d2_bp1(SWAP *) bi_cr2_f *
+NODE bi_ha1_i1d2_b(SWAP *) bi_ha1_i1d2_bp0 bi_ha1_i1d2_bp1
+NODE bi_ha1_i1d2_r1(PUSH bi_ha1_i1d2_b bi_ha1_i1d2_bp1) bi_ha1_d1_t *
+NODE bi_ha1_i1d2_r0(PUSH bi_ha1_i1d2_b bi_ha1_i1d2_bp0) bi_ha1_i1d2_r1 *
+NODE bi_ha1_i1d2_f(SWAP bi_ha1_i1d2_b) bi_ha1_d1_t *
+NODE bi_ha1_d0_s(SWAP *) x_bd1_b *
+NODE bi_ha1_d0_t(SWAP *) bi_ha1_d1_s *
+NODE bi_ha1_d1_s(SWAP *) bi_cr1_b *
+NODE bi_ha1_d1_t(SWAP *) bi_ha1_XOR_s *
+NODE bi_ha1_s(SWAP *) bi_ha1_d0_s *
+NODE bi_ha1_XOR_s(SWAP *) bi_ha1_i0d1_b *
+NODE bi_ha1_XOR__r2(SWAP bi_ha1_i1d1_bp0) bi_ha1_i1d1_b *
+NODE bi_ha1_XOR__r1(SWAP bi_ha1_i1d1_bp1) bi_ha1_XOR__r2 *
+NODE bi_ha1_XOR_t(SWAP *) bi_ha1_AND_s *
+NODE bi_ha1_AND_s(SWAP *) bi_ha1_i0d2_b *
+NODE bi_ha1_AND_t(SWAP *) bi_ha1_t *
+NODE bi_ha1_t(SWAP *) bi_ha2_s *
+NODE bi_ha2_i0d1_bp0(SWAP *) bi_ha2_i1d1_b *
+NODE bi_ha2_i0d1_bp1(SWAP *) bi_ha2_XOR__r1 *
+NODE bi_ha2_i0d1_b(SWAP *) bi_ha2_i0d1_bp0 bi_ha2_i0d1_bp1
+NODE bi_ha2_i0d1_r1(PUSH bi_ha2_i0d1_b bi_ha2_i0d1_bp1) bi_ha2_i0d2_r0 *
+NODE bi_ha2_i0d1_r0(PUSH bi_ha2_i0d1_b bi_ha2_i0d1_bp0) bi_ha2_i0d1_r1 *
+NODE bi_ha2_i0d1_f(SWAP bi_ha2_i0d1_b) bi_ha2_i0d2_f *
+NODE bi_ha2_i1d1_bp0(SWAP *) y_bd2_r0 y_bd2_f
+NODE bi_ha2_i1d1_bp1(SWAP *) y_bd2_f y_bd2_r0
+NODE bi_ha2_i1d1_b(SWAP *) bi_ha2_i1d1_bp0 bi_ha2_i1d1_bp1
+NODE bi_ha2_i1d1_r1(PUSH bi_ha2_i1d1_b bi_ha2_i1d1_bp1) bi_ha2_i1d2_r0 *
+NODE bi_ha2_i1d1_r0(PUSH bi_ha2_i1d1_b bi_ha2_i1d1_bp0) bi_ha2_i1d1_r1 *
+NODE bi_ha2_i1d1_f(SWAP bi_ha2_i1d1_b) bi_ha2_i1d2_f *
+NODE bi_ha2_i0d2_bp0(SWAP *) bi_cr3_r0 *
+NODE bi_ha2_i0d2_bp1(SWAP *) bi_ha2_i1d2_b *
+NODE bi_ha2_i0d2_b(SWAP *) bi_ha2_i0d2_bp0 bi_ha2_i0d2_bp1
+NODE bi_ha2_i0d2_r1(PUSH bi_ha2_i0d2_b bi_ha2_i0d2_bp1) bi_ha2_d0_t *
+NODE bi_ha2_i0d2_r0(PUSH bi_ha2_i0d2_b bi_ha2_i0d2_bp0) bi_ha2_i0d2_r1 *
+NODE bi_ha2_i0d2_f(SWAP bi_ha2_i0d2_b) bi_ha2_d0_t *
+NODE bi_ha2_i1d2_bp0(SWAP *) bi_cr3_r0 *
+NODE bi_ha2_i1d2_bp1(SWAP *) bi_cr3_f *
+NODE bi_ha2_i1d2_b(SWAP *) bi_ha2_i1d2_bp0 bi_ha2_i1d2_bp1
+NODE bi_ha2_i1d2_r1(PUSH bi_ha2_i1d2_b bi_ha2_i1d2_bp1) bi_ha2_d1_t *
+NODE bi_ha2_i1d2_r0(PUSH bi_ha2_i1d2_b bi_ha2_i1d2_bp0) bi_ha2_i1d2_r1 *
+NODE bi_ha2_i1d2_f(SWAP bi_ha2_i1d2_b) bi_ha2_d1_t *
+NODE bi_ha2_d0_s(SWAP *) x_bd2_b *
+NODE bi_ha2_d0_t(SWAP *) bi_ha2_d1_s *
+NODE bi_ha2_d1_s(SWAP *) bi_cr2_b *
+NODE bi_ha2_d1_t(SWAP *) bi_ha2_XOR_s *
+NODE bi_ha2_s(SWAP *) bi_ha2_d0_s *
+NODE bi_ha2_XOR_s(SWAP *) bi_ha2_i0d1_b *
+NODE bi_ha2_XOR__r2(SWAP bi_ha2_i1d1_bp0) bi_ha2_i1d1_b *
+NODE bi_ha2_XOR__r1(SWAP bi_ha2_i1d1_bp1) bi_ha2_XOR__r2 *
+NODE bi_ha2_XOR_t(SWAP *) bi_ha2_AND_s *
+NODE bi_ha2_AND_s(SWAP *) bi_ha2_i0d2_b *
+NODE bi_ha2_AND_t(SWAP *) bi_ha2_t *
+NODE bi_ha2_t(SWAP *) bi_ha3_s *
+NODE bi_ha3_i0d1_bp0(SWAP *) bi_ha3_i1d1_b *
+NODE bi_ha3_i0d1_bp1(SWAP *) bi_ha3_XOR__r1 *
+NODE bi_ha3_i0d1_b(SWAP *) bi_ha3_i0d1_bp0 bi_ha3_i0d1_bp1
+NODE bi_ha3_i0d1_r1(PUSH bi_ha3_i0d1_b bi_ha3_i0d1_bp1) bi_ha3_i0d2_r0 *
+NODE bi_ha3_i0d1_r0(PUSH bi_ha3_i0d1_b bi_ha3_i0d1_bp0) bi_ha3_i0d1_r1 *
+NODE bi_ha3_i0d1_f(SWAP bi_ha3_i0d1_b) bi_ha3_i0d2_f *
+NODE bi_ha3_i1d1_bp0(SWAP *) y_bd3_r0 y_bd3_f
+NODE bi_ha3_i1d1_bp1(SWAP *) y_bd3_f y_bd3_r0
+NODE bi_ha3_i1d1_b(SWAP *) bi_ha3_i1d1_bp0 bi_ha3_i1d1_bp1
+NODE bi_ha3_i1d1_r1(PUSH bi_ha3_i1d1_b bi_ha3_i1d1_bp1) bi_ha3_i1d2_r0 *
+NODE bi_ha3_i1d1_r0(PUSH bi_ha3_i1d1_b bi_ha3_i1d1_bp0) bi_ha3_i1d1_r1 *
+NODE bi_ha3_i1d1_f(SWAP bi_ha3_i1d1_b) bi_ha3_i1d2_f *
+NODE bi_ha3_i0d2_bp0(SWAP *) bi_cr4_r0 *
+NODE bi_ha3_i0d2_bp1(SWAP *) bi_ha3_i1d2_b *
+NODE bi_ha3_i0d2_b(SWAP *) bi_ha3_i0d2_bp0 bi_ha3_i0d2_bp1
+NODE bi_ha3_i0d2_r1(PUSH bi_ha3_i0d2_b bi_ha3_i0d2_bp1) bi_ha3_d0_t *
+NODE bi_ha3_i0d2_r0(PUSH bi_ha3_i0d2_b bi_ha3_i0d2_bp0) bi_ha3_i0d2_r1 *
+NODE bi_ha3_i0d2_f(SWAP bi_ha3_i0d2_b) bi_ha3_d0_t *
+NODE bi_ha3_i1d2_bp0(SWAP *) bi_cr4_r0 *
+NODE bi_ha3_i1d2_bp1(SWAP *) bi_cr4_f *
+NODE bi_ha3_i1d2_b(SWAP *) bi_ha3_i1d2_bp0 bi_ha3_i1d2_bp1
+NODE bi_ha3_i1d2_r1(PUSH bi_ha3_i1d2_b bi_ha3_i1d2_bp1) bi_ha3_d1_t *
+NODE bi_ha3_i1d2_r0(PUSH bi_ha3_i1d2_b bi_ha3_i1d2_bp0) bi_ha3_i1d2_r1 *
+NODE bi_ha3_i1d2_f(SWAP bi_ha3_i1d2_b) bi_ha3_d1_t *
+NODE bi_ha3_d0_s(SWAP *) x_bd3_b *
+NODE bi_ha3_d0_t(SWAP *) bi_ha3_d1_s *
+NODE bi_ha3_d1_s(SWAP *) bi_cr3_b *
+NODE bi_ha3_d1_t(SWAP *) bi_ha3_XOR_s *
+NODE bi_ha3_s(SWAP *) bi_ha3_d0_s *
+NODE bi_ha3_XOR_s(SWAP *) bi_ha3_i0d1_b *
+NODE bi_ha3_XOR__r2(SWAP bi_ha3_i1d1_bp0) bi_ha3_i1d1_b *
+NODE bi_ha3_XOR__r1(SWAP bi_ha3_i1d1_bp1) bi_ha3_XOR__r2 *
+NODE bi_ha3_XOR_t(SWAP *) bi_ha3_AND_s *
+NODE bi_ha3_AND_s(SWAP *) bi_ha3_i0d2_b *
+NODE bi_ha3_AND_t(SWAP *) bi_ha3_t *
+NODE bi_ha3_t(SWAP *) bi_ha4_s *
+NODE bi_ha4_i0d1_bp0(SWAP *) bi_ha4_i1d1_b *
+NODE bi_ha4_i0d1_bp1(SWAP *) bi_ha4_XOR__r1 *
+NODE bi_ha4_i0d1_b(SWAP *) bi_ha4_i0d1_bp0 bi_ha4_i0d1_bp1
+NODE bi_ha4_i0d1_r1(PUSH bi_ha4_i0d1_b bi_ha4_i0d1_bp1) bi_ha4_i0d2_r0 *
+NODE bi_ha4_i0d1_r0(PUSH bi_ha4_i0d1_b bi_ha4_i0d1_bp0) bi_ha4_i0d1_r1 *
+NODE bi_ha4_i0d1_f(SWAP bi_ha4_i0d1_b) bi_ha4_i0d2_f *
+NODE bi_ha4_i1d1_bp0(SWAP *) y_bd4_r0 y_bd4_f
+NODE bi_ha4_i1d1_bp1(SWAP *) y_bd4_f y_bd4_r0
+NODE bi_ha4_i1d1_b(SWAP *) bi_ha4_i1d1_bp0 bi_ha4_i1d1_bp1
+NODE bi_ha4_i1d1_r1(PUSH bi_ha4_i1d1_b bi_ha4_i1d1_bp1) bi_ha4_i1d2_r0 *
+NODE bi_ha4_i1d1_r0(PUSH bi_ha4_i1d1_b bi_ha4_i1d1_bp0) bi_ha4_i1d1_r1 *
+NODE bi_ha4_i1d1_f(SWAP bi_ha4_i1d1_b) bi_ha4_i1d2_f *
+NODE bi_ha4_i0d2_bp0(SWAP *) bi_cr5_r0 *
+NODE bi_ha4_i0d2_bp1(SWAP *) bi_ha4_i1d2_b *
+NODE bi_ha4_i0d2_b(SWAP *) bi_ha4_i0d2_bp0 bi_ha4_i0d2_bp1
+NODE bi_ha4_i0d2_r1(PUSH bi_ha4_i0d2_b bi_ha4_i0d2_bp1) bi_ha4_d0_t *
+NODE bi_ha4_i0d2_r0(PUSH bi_ha4_i0d2_b bi_ha4_i0d2_bp0) bi_ha4_i0d2_r1 *
+NODE bi_ha4_i0d2_f(SWAP bi_ha4_i0d2_b) bi_ha4_d0_t *
+NODE bi_ha4_i1d2_bp0(SWAP *) bi_cr5_r0 *
+NODE bi_ha4_i1d2_bp1(SWAP *) bi_cr5_f *
+NODE bi_ha4_i1d2_b(SWAP *) bi_ha4_i1d2_bp0 bi_ha4_i1d2_bp1
+NODE bi_ha4_i1d2_r1(PUSH bi_ha4_i1d2_b bi_ha4_i1d2_bp1) bi_ha4_d1_t *
+NODE bi_ha4_i1d2_r0(PUSH bi_ha4_i1d2_b bi_ha4_i1d2_bp0) bi_ha4_i1d2_r1 *
+NODE bi_ha4_i1d2_f(SWAP bi_ha4_i1d2_b) bi_ha4_d1_t *
+NODE bi_ha4_d0_s(SWAP *) x_bd4_b *
+NODE bi_ha4_d0_t(SWAP *) bi_ha4_d1_s *
+NODE bi_ha4_d1_s(SWAP *) bi_cr4_b *
+NODE bi_ha4_d1_t(SWAP *) bi_ha4_XOR_s *
+NODE bi_ha4_s(SWAP *) bi_ha4_d0_s *
+NODE bi_ha4_XOR_s(SWAP *) bi_ha4_i0d1_b *
+NODE bi_ha4_XOR__r2(SWAP bi_ha4_i1d1_bp0) bi_ha4_i1d1_b *
+NODE bi_ha4_XOR__r1(SWAP bi_ha4_i1d1_bp1) bi_ha4_XOR__r2 *
+NODE bi_ha4_XOR_t(SWAP *) bi_ha4_AND_s *
+NODE bi_ha4_AND_s(SWAP *) bi_ha4_i0d2_b *
+NODE bi_ha4_AND_t(SWAP *) bi_ha4_t *
+NODE bi_ha4_t(SWAP *) bi_ha5_s *
+NODE bi_ha5_i0d1_bp0(SWAP *) bi_ha5_i1d1_b *
+NODE bi_ha5_i0d1_bp1(SWAP *) bi_ha5_XOR__r1 *
+NODE bi_ha5_i0d1_b(SWAP *) bi_ha5_i0d1_bp0 bi_ha5_i0d1_bp1
+NODE bi_ha5_i0d1_r1(PUSH bi_ha5_i0d1_b bi_ha5_i0d1_bp1) bi_ha5_i0d2_r0 *
+NODE bi_ha5_i0d1_r0(PUSH bi_ha5_i0d1_b bi_ha5_i0d1_bp0) bi_ha5_i0d1_r1 *
+NODE bi_ha5_i0d1_f(SWAP bi_ha5_i0d1_b) bi_ha5_i0d2_f *
+NODE bi_ha5_i1d1_bp0(SWAP *) y_bd5_r0 y_bd5_f
+NODE bi_ha5_i1d1_bp1(SWAP *) y_bd5_f y_bd5_r0
+NODE bi_ha5_i1d1_b(SWAP *) bi_ha5_i1d1_bp0 bi_ha5_i1d1_bp1
+NODE bi_ha5_i1d1_r1(PUSH bi_ha5_i1d1_b bi_ha5_i1d1_bp1) bi_ha5_i1d2_r0 *
+NODE bi_ha5_i1d1_r0(PUSH bi_ha5_i1d1_b bi_ha5_i1d1_bp0) bi_ha5_i1d1_r1 *
+NODE bi_ha5_i1d1_f(SWAP bi_ha5_i1d1_b) bi_ha5_i1d2_f *
+NODE bi_ha5_i0d2_bp0(SWAP *) bi_cr6_r0 *
+NODE bi_ha5_i0d2_bp1(SWAP *) bi_ha5_i1d2_b *
+NODE bi_ha5_i0d2_b(SWAP *) bi_ha5_i0d2_bp0 bi_ha5_i0d2_bp1
+NODE bi_ha5_i0d2_r1(PUSH bi_ha5_i0d2_b bi_ha5_i0d2_bp1) bi_ha5_d0_t *
+NODE bi_ha5_i0d2_r0(PUSH bi_ha5_i0d2_b bi_ha5_i0d2_bp0) bi_ha5_i0d2_r1 *
+NODE bi_ha5_i0d2_f(SWAP bi_ha5_i0d2_b) bi_ha5_d0_t *
+NODE bi_ha5_i1d2_bp0(SWAP *) bi_cr6_r0 *
+NODE bi_ha5_i1d2_bp1(SWAP *) bi_cr6_f *
+NODE bi_ha5_i1d2_b(SWAP *) bi_ha5_i1d2_bp0 bi_ha5_i1d2_bp1
+NODE bi_ha5_i1d2_r1(PUSH bi_ha5_i1d2_b bi_ha5_i1d2_bp1) bi_ha5_d1_t *
+NODE bi_ha5_i1d2_r0(PUSH bi_ha5_i1d2_b bi_ha5_i1d2_bp0) bi_ha5_i1d2_r1 *
+NODE bi_ha5_i1d2_f(SWAP bi_ha5_i1d2_b) bi_ha5_d1_t *
+NODE bi_ha5_d0_s(SWAP *) x_bd5_b *
+NODE bi_ha5_d0_t(SWAP *) bi_ha5_d1_s *
+NODE bi_ha5_d1_s(SWAP *) bi_cr5_b *
+NODE bi_ha5_d1_t(SWAP *) bi_ha5_XOR_s *
+NODE bi_ha5_s(SWAP *) bi_ha5_d0_s *
+NODE bi_ha5_XOR_s(SWAP *) bi_ha5_i0d1_b *
+NODE bi_ha5_XOR__r2(SWAP bi_ha5_i1d1_bp0) bi_ha5_i1d1_b *
+NODE bi_ha5_XOR__r1(SWAP bi_ha5_i1d1_bp1) bi_ha5_XOR__r2 *
+NODE bi_ha5_XOR_t(SWAP *) bi_ha5_AND_s *
+NODE bi_ha5_AND_s(SWAP *) bi_ha5_i0d2_b *
+NODE bi_ha5_AND_t(SWAP *) bi_ha5_t *
+NODE bi_ha5_t(SWAP *) bi_ha6_s *
+NODE bi_ha6_i0d1_bp0(SWAP *) bi_ha6_i1d1_b *
+NODE bi_ha6_i0d1_bp1(SWAP *) bi_ha6_XOR__r1 *
+NODE bi_ha6_i0d1_b(SWAP *) bi_ha6_i0d1_bp0 bi_ha6_i0d1_bp1
+NODE bi_ha6_i0d1_r1(PUSH bi_ha6_i0d1_b bi_ha6_i0d1_bp1) bi_ha6_i0d2_r0 *
+NODE bi_ha6_i0d1_r0(PUSH bi_ha6_i0d1_b bi_ha6_i0d1_bp0) bi_ha6_i0d1_r1 *
+NODE bi_ha6_i0d1_f(SWAP bi_ha6_i0d1_b) bi_ha6_i0d2_f *
+NODE bi_ha6_i1d1_bp0(SWAP *) y_bd6_r0 y_bd6_f
+NODE bi_ha6_i1d1_bp1(SWAP *) y_bd6_f y_bd6_r0
+NODE bi_ha6_i1d1_b(SWAP *) bi_ha6_i1d1_bp0 bi_ha6_i1d1_bp1
+NODE bi_ha6_i1d1_r1(PUSH bi_ha6_i1d1_b bi_ha6_i1d1_bp1) bi_ha6_i1d2_r0 *
+NODE bi_ha6_i1d1_r0(PUSH bi_ha6_i1d1_b bi_ha6_i1d1_bp0) bi_ha6_i1d1_r1 *
+NODE bi_ha6_i1d1_f(SWAP bi_ha6_i1d1_b) bi_ha6_i1d2_f *
+NODE bi_ha6_i0d2_bp0(SWAP *) bi_cr7_r0 *
+NODE bi_ha6_i0d2_bp1(SWAP *) bi_ha6_i1d2_b *
+NODE bi_ha6_i0d2_b(SWAP *) bi_ha6_i0d2_bp0 bi_ha6_i0d2_bp1
+NODE bi_ha6_i0d2_r1(PUSH bi_ha6_i0d2_b bi_ha6_i0d2_bp1) bi_ha6_d0_t *
+NODE bi_ha6_i0d2_r0(PUSH bi_ha6_i0d2_b bi_ha6_i0d2_bp0) bi_ha6_i0d2_r1 *
+NODE bi_ha6_i0d2_f(SWAP bi_ha6_i0d2_b) bi_ha6_d0_t *
+NODE bi_ha6_i1d2_bp0(SWAP *) bi_cr7_r0 *
+NODE bi_ha6_i1d2_bp1(SWAP *) bi_cr7_f *
+NODE bi_ha6_i1d2_b(SWAP *) bi_ha6_i1d2_bp0 bi_ha6_i1d2_bp1
+NODE bi_ha6_i1d2_r1(PUSH bi_ha6_i1d2_b bi_ha6_i1d2_bp1) bi_ha6_d1_t *
+NODE bi_ha6_i1d2_r0(PUSH bi_ha6_i1d2_b bi_ha6_i1d2_bp0) bi_ha6_i1d2_r1 *
+NODE bi_ha6_i1d2_f(SWAP bi_ha6_i1d2_b) bi_ha6_d1_t *
+NODE bi_ha6_d0_s(SWAP *) x_bd6_b *
+NODE bi_ha6_d0_t(SWAP *) bi_ha6_d1_s *
+NODE bi_ha6_d1_s(SWAP *) bi_cr6_b *
+NODE bi_ha6_d1_t(SWAP *) bi_ha6_XOR_s *
+NODE bi_ha6_s(SWAP *) bi_ha6_d0_s *
+NODE bi_ha6_XOR_s(SWAP *) bi_ha6_i0d1_b *
+NODE bi_ha6_XOR__r2(SWAP bi_ha6_i1d1_bp0) bi_ha6_i1d1_b *
+NODE bi_ha6_XOR__r1(SWAP bi_ha6_i1d1_bp1) bi_ha6_XOR__r2 *
+NODE bi_ha6_XOR_t(SWAP *) bi_ha6_AND_s *
+NODE bi_ha6_AND_s(SWAP *) bi_ha6_i0d2_b *
+NODE bi_ha6_AND_t(SWAP *) bi_ha6_t *
+NODE bi_ha6_t(SWAP *) bi_ha7_s *
+NODE bi_ha7_i0d1_bp0(SWAP *) bi_ha7_i1d1_b *
+NODE bi_ha7_i0d1_bp1(SWAP *) bi_ha7_XOR__r1 *
+NODE bi_ha7_i0d1_b(SWAP *) bi_ha7_i0d1_bp0 bi_ha7_i0d1_bp1
+NODE bi_ha7_i0d1_r1(PUSH bi_ha7_i0d1_b bi_ha7_i0d1_bp1) bi_ha7_i0d2_r0 *
+NODE bi_ha7_i0d1_r0(PUSH bi_ha7_i0d1_b bi_ha7_i0d1_bp0) bi_ha7_i0d1_r1 *
+NODE bi_ha7_i0d1_f(SWAP bi_ha7_i0d1_b) bi_ha7_i0d2_f *
+NODE bi_ha7_i1d1_bp0(SWAP *) y_bd7_r0 y_bd7_f
+NODE bi_ha7_i1d1_bp1(SWAP *) y_bd7_f y_bd7_r0
+NODE bi_ha7_i1d1_b(SWAP *) bi_ha7_i1d1_bp0 bi_ha7_i1d1_bp1
+NODE bi_ha7_i1d1_r1(PUSH bi_ha7_i1d1_b bi_ha7_i1d1_bp1) bi_ha7_i1d2_r0 *
+NODE bi_ha7_i1d1_r0(PUSH bi_ha7_i1d1_b bi_ha7_i1d1_bp0) bi_ha7_i1d1_r1 *
+NODE bi_ha7_i1d1_f(SWAP bi_ha7_i1d1_b) bi_ha7_i1d2_f *
+NODE bi_ha7_i0d2_bp0(SWAP *) bi_cr8_r0 *
+NODE bi_ha7_i0d2_bp1(SWAP *) bi_ha7_i1d2_b *
+NODE bi_ha7_i0d2_b(SWAP *) bi_ha7_i0d2_bp0 bi_ha7_i0d2_bp1
+NODE bi_ha7_i0d2_r1(PUSH bi_ha7_i0d2_b bi_ha7_i0d2_bp1) bi_ha7_d0_t *
+NODE bi_ha7_i0d2_r0(PUSH bi_ha7_i0d2_b bi_ha7_i0d2_bp0) bi_ha7_i0d2_r1 *
+NODE bi_ha7_i0d2_f(SWAP bi_ha7_i0d2_b) bi_ha7_d0_t *
+NODE bi_ha7_i1d2_bp0(SWAP *) bi_cr8_r0 *
+NODE bi_ha7_i1d2_bp1(SWAP *) bi_cr8_f *
+NODE bi_ha7_i1d2_b(SWAP *) bi_ha7_i1d2_bp0 bi_ha7_i1d2_bp1
+NODE bi_ha7_i1d2_r1(PUSH bi_ha7_i1d2_b bi_ha7_i1d2_bp1) bi_ha7_d1_t *
+NODE bi_ha7_i1d2_r0(PUSH bi_ha7_i1d2_b bi_ha7_i1d2_bp0) bi_ha7_i1d2_r1 *
+NODE bi_ha7_i1d2_f(SWAP bi_ha7_i1d2_b) bi_ha7_d1_t *
+NODE bi_ha7_d0_s(SWAP *) x_bd7_b *
+NODE bi_ha7_d0_t(SWAP *) bi_ha7_d1_s *
+NODE bi_ha7_d1_s(SWAP *) bi_cr7_b *
+NODE bi_ha7_d1_t(SWAP *) bi_ha7_XOR_s *
+NODE bi_ha7_s(SWAP *) bi_ha7_d0_s *
+NODE bi_ha7_XOR_s(SWAP *) bi_ha7_i0d1_b *
+NODE bi_ha7_XOR__r2(SWAP bi_ha7_i1d1_bp0) bi_ha7_i1d1_b *
+NODE bi_ha7_XOR__r1(SWAP bi_ha7_i1d1_bp1) bi_ha7_XOR__r2 *
+NODE bi_ha7_XOR_t(SWAP *) bi_ha7_AND_s *
+NODE bi_ha7_AND_s(SWAP *) bi_ha7_i0d2_b *
+NODE bi_ha7_AND_t(SWAP *) bi_ha7_t *
+NODE bi_ha7_t(SWAP *) bi_t *
+NODE wy_s(SWAP *) wy_wd0_s *
+NODE wy_t(SWAP *) * *
+NODE wy_wd0_s(SWAP *) y_bd0_b *
+NODE wy_wd0_t(SWAP *) wy_wd1_s *
+NODE wy_wd0_c1(PUSH O0 *) O0 *
+NODE wy_wd0_c2(PUSH O0 wy_wd0_t) wy_wd0_c1 *
+NODE wy_wd0_c3(PUSH O1 *) O1 *
+NODE wy_wd0_c4(PUSH O1 wy_wd0_t) wy_wd0_c3 *
+NODE wy_wd1_s(SWAP *) y_bd1_b *
+NODE wy_wd1_t(SWAP *) wy_wd2_s *
+NODE wy_wd1_c1(PUSH O0 *) O0 *
+NODE wy_wd1_c2(PUSH O0 wy_wd1_t) wy_wd1_c1 *
+NODE wy_wd1_c3(PUSH O1 *) O1 *
+NODE wy_wd1_c4(PUSH O1 wy_wd1_t) wy_wd1_c3 *
+NODE wy_wd2_s(SWAP *) y_bd2_b *
+NODE wy_wd2_t(SWAP *) wy_wd3_s *
+NODE wy_wd2_c1(PUSH O0 *) O0 *
+NODE wy_wd2_c2(PUSH O0 wy_wd2_t) wy_wd2_c1 *
+NODE wy_wd2_c3(PUSH O1 *) O1 *
+NODE wy_wd2_c4(PUSH O1 wy_wd2_t) wy_wd2_c3 *
+NODE wy_wd3_s(SWAP *) y_bd3_b *
+NODE wy_wd3_t(SWAP *) wy_wd4_s *
+NODE wy_wd3_c1(PUSH O0 *) O0 *
+NODE wy_wd3_c2(PUSH O0 wy_wd3_t) wy_wd3_c1 *
+NODE wy_wd3_c3(PUSH O1 *) O1 *
+NODE wy_wd3_c4(PUSH O1 wy_wd3_t) wy_wd3_c3 *
+NODE wy_wd4_s(SWAP *) y_bd4_b *
+NODE wy_wd4_t(SWAP *) wy_wd5_s *
+NODE wy_wd4_c1(PUSH O0 *) O0 *
+NODE wy_wd4_c2(PUSH O0 wy_wd4_t) wy_wd4_c1 *
+NODE wy_wd4_c3(PUSH O1 *) O1 *
+NODE wy_wd4_c4(PUSH O1 wy_wd4_t) wy_wd4_c3 *
+NODE wy_wd5_s(SWAP *) y_bd5_b *
+NODE wy_wd5_t(SWAP *) wy_wd6_s *
+NODE wy_wd5_c1(PUSH O0 *) O0 *
+NODE wy_wd5_c2(PUSH O0 wy_wd5_t) wy_wd5_c1 *
+NODE wy_wd5_c3(PUSH O1 *) O1 *
+NODE wy_wd5_c4(PUSH O1 wy_wd5_t) wy_wd5_c3 *
+NODE wy_wd6_s(SWAP *) y_bd6_b *
+NODE wy_wd6_t(SWAP *) wy_wd7_s *
+NODE wy_wd6_c1(PUSH O0 *) O0 *
+NODE wy_wd6_c2(PUSH O0 wy_wd6_t) wy_wd6_c1 *
+NODE wy_wd6_c3(PUSH O1 *) O1 *
+NODE wy_wd6_c4(PUSH O1 wy_wd6_t) wy_wd6_c3 *
+NODE wy_wd7_s(SWAP *) y_bd7_b *
+NODE wy_wd7_t(SWAP *) wy_t *
+NODE wy_wd7_c1(PUSH O0 *) O0 *
+NODE wy_wd7_c2(PUSH O0 wy_wd7_t) wy_wd7_c1 *
+NODE wy_wd7_c3(PUSH O1 *) O1 *
+NODE wy_wd7_c4(PUSH O1 wy_wd7_t) wy_wd7_c3 *
 
 
 END
 CUR = S
-INPUT = 11010010
+INPUT = 11110000

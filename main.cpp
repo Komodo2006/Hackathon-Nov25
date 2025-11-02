@@ -3,7 +3,7 @@ using namespace std;
 
 #define PUSH 0
 #define SWAP 1
-#define N 2020
+#define N 20200
 
 map<string,int> mp;
 string var[N];
@@ -182,7 +182,7 @@ int main(){
     p.print(true);
     int halt = mp["*"];
     // demo: step a bit and show CUR only
-    for(int i = 0; i < 256; i++){
+    for(int i = 0; i < 1000; i++){
         p.step();
         p.print(false);
         if(p.n==halt)break;
