@@ -159,12 +159,12 @@ namespace IO{
     struct Writer{
         int s,t;
         void init(Bit x){
-            s = newnode(NIL,0,0);
-            t = newnode(NIL,0,0);
-            int c1 = newnode(PUSH,O0,0,O0,0);
-            int c2 = newnode(PUSH,O0,t,c1,0);
-            int c3 = newnode(PUSH,O1,0,O1,0);
-            int c4 = newnode(PUSH,O1,t,c3,0);
+            int s = newnode(NIL,0,0);
+            int t = newnode(NIL,0,0);
+            int c1 = newnode(PUSH,O0,t,O0,0);
+            int c2 = newnode(PUSH,O0,0,c1,0);
+            int c3 = newnode(PUSH,O1,t,O1,0);
+            int c4 = newnode(PUSH,O1,0,c3,0);
             connect0(s,x.b);
             connect0(x.bp0,c2);
             connect0(x.bp1,c4);
@@ -191,10 +191,11 @@ int main(){
     connect0(S,rx.s); connect0(rx.t,ry.s);
     Logic::HalfAdder ha; ha.init(x,y,z,w);
     connect0(ry.t,ha.s);
-    IO :: Writer wz,ww;
-    wz.init(z);ww.init(w);
-    connect0(ha.t,wz.s);
-    connect0(wz.t,ww.s);
-    connect0(ww.t,0);
+    connect0(ha.t,z.b);
+    connect0(z.bp0,O0); connect0(z.bp1,O1);
+    int c5 = newnode(PUSH,O0,0,w.b,0);
+    int c6 = newnode(PUSH,O1,0,c5,0);
+    connect0(O0,c6);connect0(O1,c6);
+    connect0(w.bp0,O0); connect0(w.bp1,O1);
     print();
 }
